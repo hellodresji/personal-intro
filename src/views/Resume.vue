@@ -201,7 +201,7 @@
 
 .basic-info {
     height: 300px;
-    background: rgb(72, 62, 109);
+    background: rgb(80, 80, 80);
     padding: 0 50px;
     display: flex;
     justify-content: center;
