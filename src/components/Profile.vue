@@ -165,6 +165,10 @@
     .skills {
         width: 100%;
     }
+
+    .skills-container {
+        margin-top: 40px;
+    }
 }
 .content-section {
     display: grid;

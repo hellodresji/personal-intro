@@ -1,201 +1,207 @@
 <template>
-    <div class="cus-container">
-        <section class="basic-info">
-            <section class="basic-info-container">
-                <img :src="require('@/assets/imgs/pic.jpg')" class="avatar" />
-                <div class="info-container">
-                    <label style="color: whitesmoke; font-size: 2.5em; margin-bottom: 10px">Lebenslauf</label>
-                    <div class="info-item">
-                        <div class="info-title">Vorname:</div>
-                        <div class="info-content">Guanghui</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-title">Nachname:</div>
-                        <div class="info-content">Ji</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-title">Geburtsdatum:</div>
-                        <div class="info-content">12.1991</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-title">Email:</div>
-                        <div class="info-content">aaron.guanghui.ji@gmail.com</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-title">Tel.:</div>
-                        <div class="info-content">017661847604</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-title">Adresse:</div>
-                        <div class="info-content">Reitbahnstr. 35, 01069, Dresden</div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="content">
-            <section class="content-container">
-                <section class="educations">
-                    <label class="label">Schule und Ausbuildung</label>
-                    <v-divider class="my-3"/>
-                    <div class="dig-item">
-                        <div class="time">
-                            2014.10 - 2018.08
+    <div class="wrapper">
+        <div class="cus-container">
+            <section class="basic-info">
+                <section class="basic-info-container">
+                    <img :src="require('@/assets/imgs/pic.jpg')" class="avatar" />
+                    <div class="info-container">
+                        <label style="color: whitesmoke; font-size: 2.5em; margin-bottom: 10px">Lebenslauf</label>
+                        <div class="info-item">
+                            <div class="info-title">Vorname:</div>
+                            <div class="info-content">Guanghui</div>
                         </div>
-                        <div class="dig-content">
-                            <div class="cus-title">Masterstudium Informatik</div>
-                            <div class="cus-addr">Technische Universität Dresden</div>
+                        <div class="info-item">
+                            <div class="info-title">Nachname:</div>
+                            <div class="info-content">Ji</div>
                         </div>
-                    </div>
-
-                    <div class="dig-item">
-                        <div class="time">
-                            2009.09 - 2013.06
+                        <div class="info-item">
+                            <div class="info-title">Geburtsdatum:</div>
+                            <div class="info-content">12.1991</div>
                         </div>
-                        <div class="dig-content">
-                            <div class="cus-title">Bachelorstudium Informatik</div>
-                            <div class="cus-addr">Wuhan University of Science and Technology</div>
+                        <div class="info-item">
+                            <div class="info-title">Email:</div>
+                            <div class="info-content">aaron.guanghui.ji@gmail.com</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-title">Tel.:</div>
+                            <div class="info-content">017661847604</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-title">Adresse:</div>
+                            <div class="info-content">Reitbahnstr. 35, 01069, Dresden</div>
                         </div>
                     </div>
                 </section>
-                <section class="experience">
-                    <label class="label">Technische Erfahrungen</label>
-                    <v-divider class="my-3"/>
-                    <div class="dig-item" v-for="item in experiences" :key="item.time">
-                        <div class="time">
-                            {{item.time}}
-                        </div>
-                        <div class="dig-content">
-                            <div class="cus-title">{{item.topic}}</div>
-                            <div class="cus-addr mb-1">{{item.addr}}</div>
-                            <div class="cus-content">
-                                {{item.content}}
+            </section>
+            <section class="content">
+                <section class="content-container">
+                    <section class="educations">
+                        <label class="label">Schule und Ausbuildung</label>
+                        <v-divider class="my-3"/>
+                        <div class="dig-item">
+                            <div class="time">
+                                2014.10 - 2018.08
                             </div>
-                            <div class="mt-2">
-                                <v-chip
-                                    v-for="tech of item.techs"
-                                    :key="tech"
-                                    class="mr-2 mb-2"
-                                    small
-                                    >
-                                    {{tech}}
-                                </v-chip>
+                            <div class="dig-content">
+                                <div class="cus-title">Masterstudium Informatik</div>
+                                <div class="cus-addr">Technische Universität Dresden</div>
                             </div>
                         </div>
+
+                        <div class="dig-item">
+                            <div class="time">
+                                2009.09 - 2013.06
+                            </div>
+                            <div class="dig-content">
+                                <div class="cus-title">Bachelorstudium Informatik</div>
+                                <div class="cus-addr">Wuhan University of Science and Technology</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="experience">
+                        <label class="label">Technische Erfahrungen</label>
+                        <v-divider class="my-3"/>
+                        <div class="dig-item" v-for="item in experiences" :key="item.time">
+                            <div class="time">
+                                {{item.time}}
+                            </div>
+                            <div class="dig-content">
+                                <div class="cus-title">{{item.topic}}</div>
+                                <div class="cus-addr mb-1">{{item.addr}}</div>
+                                <div class="cus-content">
+                                    {{item.content}}
+                                </div>
+                                <div class="mt-2">
+                                    <v-chip
+                                        v-for="tech of item.techs"
+                                        :key="tech"
+                                        class="mr-2 mb-2"
+                                        small
+                                        >
+                                        {{tech}}
+                                    </v-chip>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div style="display: flex; margin-bottom: 15px;">
+                        <section class="skills">
+                            <label class="label">Fähigkeiten</label>
+                            <v-divider class="my-3"/>
+                            <div class="dig-item">
+                                <div class="time">
+                                    Frontend:
+                                </div>
+                                <div class="dig-content">
+                                    <v-chip
+                                        v-for="item of frontend"
+                                        :key="item"
+                                        class="mr-2 mb-2"
+                                        small
+                                        >
+                                        {{item}}
+                                    </v-chip>
+                                </div>
+                            </div>
+
+                            <div class="dig-item">
+                                <div class="time">
+                                    Backend:
+                                </div>
+                                <div class="dig-content">
+                                    <v-chip
+                                        v-for="item of backend"
+                                        :key="item"
+                                        class="mr-2 mb-2"
+                                        small
+                                        >
+                                        {{item}}
+                                    </v-chip>
+                                </div>
+                            </div>
+
+                            <div class="dig-item">
+                                <div class="time">
+                                    Datenbank:
+                                </div>
+                                <div class="dig-content">
+                                    <v-chip
+                                        v-for="item of database"
+                                        :key="item"
+                                        class="mr-2 mb-2"
+                                        small
+                                        >
+                                        {{item}}
+                                    </v-chip>
+                                </div>
+                            </div>
+
+                            <div class="dig-item">
+                                <div class="time">
+                                    Andere:
+                                </div>
+                                <div class="dig-content">
+                                    <v-chip
+                                        v-for="item of other"
+                                        :key="item"
+                                        class="mr-2 mb-2"
+                                        small
+                                        >
+                                        {{item}}
+                                    </v-chip>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="language">
+                            <label class="label">Sprachen</label>
+                            <v-divider class="my-3"/>
+                            <div class="dig-item">
+                                <div class="time">Deutsch: </div>
+                                <div class="time">
+                                    Fließend
+                                </div>
+                            </div>
+
+                            <div class="dig-item">
+                                <div class="time">Englisch: </div>
+                                <div class="time">
+                                    Fließend
+                                </div>
+                            </div>
+                            <div class="dig-item">
+                                <div class="time">Japanisch: </div>
+                                <div class="time">
+                                    Gut
+                                </div>
+                            </div>
+                            <div class="dig-item">
+                                <div class="time">Chinesisch: </div>
+                                <div class="time">
+                                    Muttersprache
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </section>
-                <div style="display: flex; margin-bottom: 15px;">
-                    <section class="skills">
-                        <label class="label">Fähigkeiten</label>
-                        <v-divider class="my-3"/>
-                        <div class="dig-item">
-                            <div class="time">
-                                Frontend:
-                            </div>
-                            <div class="dig-content">
-                                <v-chip
-                                    v-for="item of frontend"
-                                    :key="item"
-                                    class="mr-2 mb-2"
-                                    small
-                                    >
-                                    {{item}}
-                                </v-chip>
-                            </div>
-                        </div>
-
-                        <div class="dig-item">
-                            <div class="time">
-                                Backend:
-                            </div>
-                            <div class="dig-content">
-                                <v-chip
-                                    v-for="item of backend"
-                                    :key="item"
-                                    class="mr-2 mb-2"
-                                    small
-                                    >
-                                    {{item}}
-                                </v-chip>
-                            </div>
-                        </div>
-
-                        <div class="dig-item">
-                            <div class="time">
-                                Datenbank:
-                            </div>
-                            <div class="dig-content">
-                                <v-chip
-                                    v-for="item of database"
-                                    :key="item"
-                                    class="mr-2 mb-2"
-                                    small
-                                    >
-                                    {{item}}
-                                </v-chip>
-                            </div>
-                        </div>
-
-                        <div class="dig-item">
-                            <div class="time">
-                                Andere:
-                            </div>
-                            <div class="dig-content">
-                                <v-chip
-                                    v-for="item of other"
-                                    :key="item"
-                                    class="mr-2 mb-2"
-                                    small
-                                    >
-                                    {{item}}
-                                </v-chip>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="language">
-                        <label class="label">Sprachen</label>
-                        <v-divider class="my-3"/>
-                        <div class="dig-item">
-                            <div class="time">Deutsch: </div>
-                            <div class="time">
-                                Fließend
-                            </div>
-                        </div>
-
-                        <div class="dig-item">
-                            <div class="time">Englisch: </div>
-                            <div class="time">
-                                Fließend
-                            </div>
-                        </div>
-                        <div class="dig-item">
-                            <div class="time">Japanisch: </div>
-                            <div class="time">
-                                Gut
-                            </div>
-                        </div>
-                        <div class="dig-item">
-                            <div class="time">Chinesisch: </div>
-                            <div class="time">
-                                Muttersprache
-                            </div>
-                        </div>
-                    </section>
-                </div>
             </section>
-        </section>
+        </div>
     </div>
 </template>
 <style scoped>
-.cus-container {
+.wrapper {
     height: 100%;
     width: 100%;
-    overflow-y: auto;
+    overflow: auto;
+}
+
+.cus-container {
+    min-width: 1000px;
 }
 
 .basic-info {
     height: 300px;
-    background: gray;
+    background: rgb(72, 62, 109);
     padding: 0 50px;
     display: flex;
     justify-content: center;
@@ -248,6 +254,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
     align-items: center;
 }
 
@@ -326,7 +334,7 @@ export default class Resume extends Vue {
         {
             time: '2019.01 - Bis Jetzt',
             topic: 'Frontend Developer',
-            content: 'Arbeitet als vollzeit Frontend developer. Entwickelt Web und Mobile App für industrielles IoT',
+            content: 'Vollzeit Frontend developer. Entwicklung der Web und Mobile Apps für industrielles IoT',
             techs: ['Angular8', 'Vue.js', 'REST', 'Chart.js', 'CSS3', 'HTML5'],
             addr: 'ELCO Industrie Automation GmbH, Dresden',
             icon: 'fa fa-code',
@@ -334,7 +342,7 @@ export default class Resume extends Vue {
         {
             time: '2018.07 - 2018.09',
             topic: 'Fullstack Developer - Werkstudent',
-            content: 'Development Assistant für Datenverhandlung. Endwickelt Java und JS basierte Web-Karte Applikation.',
+            content: 'Development Assistant für Datenverhandlung. Endwicklung der Java und JS basierten Web-Karte Applikation.',
             techs: ['Java', 'Kafka', 'Websocket', 'Leaflet', 'CSS3', 'HTML5'],
             addr: 'Fraunhofer-Institut für Verkehrs- und Infrastrukturszsteme IVI',
             icon: 'fa fa-code',
@@ -350,7 +358,7 @@ export default class Resume extends Vue {
         {
             time: '2017.04 - 2017.10',
             topic: 'Fullstack Developer - Werkstudent',
-            content: 'Development Assistant für Datenvisualisierung. Entwickelt Java and Jquery basierte Web-Rechtzeit Applikation.',
+            content: 'Development Assistant für Datenvisualisierung. Entwicklung der Java and Jquery basierten Web-Rechtzeit Applikation.',
             techs: ['Java', 'Postgre', 'HTML5', 'JQuery', 'WebSocket', 'Kafka', 'D3.js', 'CSS3'],
             addr: 'Fraunhofer-Institut für Verkehrs- und Infrastrukturszsteme IVI',
             icon: 'fa fa-code',
@@ -358,7 +366,7 @@ export default class Resume extends Vue {
         {
             time: '2016.07 - 2016.09',
             topic: 'Fullstack Developer - Werkstudent',
-            content: 'Development Assistant für merhere Aspekte. Entwickelt Java, Node.js und Javascript basierte Software und Web Apps.',
+            content: 'Development Assistant für merhere Aspekte. Entwicklung der Java, Node.js und Javascript basierten Software und Web Apps.',
             techs: ['Java', 'Node.js', 'JavaScript', 'HTML5', 'CSS3'],
             addr: 'TU Dresden, Bauingenieurwiessen',
             icon: 'fa fa-code',
