@@ -49,7 +49,7 @@
                     </div>
                 </section>
             </section>
-            <section>
+            <section class="skills-container">
                 <p class="sub-title" style="text-align: center;">Skills</p>
                 <section class="skills">
                     <div class="info-item">
@@ -135,7 +135,23 @@
     font-size: .9em;
     font-weight: 300;
 }
+@media screen and (max-width: 600px) {
+    .content-section {
+        display: flex !important;
+        flex-direction: column;
+    }
 
+    .basic-info, .about-me, .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-container, .about-me .desc,
+    .skills {
+        width: 400px;
+    }
+}
 .content-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -204,7 +220,7 @@ import ScrollHint from './ScrollHint.vue';
 @Component({
     components: {
         ScrollHint,
-    }
+    },
 })
 export default class Profile extends Vue {
     public frontend: string[] = [
@@ -227,7 +243,7 @@ export default class Profile extends Vue {
     public database: string[] = [
         'MySQL',
         'Postgre',
-        'MongoDB'
+        'MongoDB',
     ];
 
     public other: string[] = [

@@ -129,7 +129,7 @@ import { Component } from 'vue-property-decorator';
 @Component({
     components: {
         ScrollHint,
-    }
+    },
 })
 export default class Home extends Vue {
     public navigateTo(target: string) {

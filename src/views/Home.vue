@@ -29,6 +29,5 @@ import Experience from '@/components/Experience.vue';
   },
 })
 export default class Home extends Vue {
-  
 }
 </script>

@@ -8,7 +8,7 @@
                 </span>
             </section>
             <v-divider></v-divider>
-            <v-timeline>
+            <v-timeline :dense="dense" ref="timelineDom">
                 <v-timeline-item
                     v-for="item in timeline"
                     :key="item.time"
@@ -16,11 +16,12 @@
                     color="orange"
                     fill-dot
                 >
-                    <template v-slot:opposite>
+                    <template v-slot:opposite v-if="!dense">
                         <span style="color: gray;">{{item.time}}</span>
                     </template>
                     <!-- <v-card class="elevation-0">
                         <v-card-text> -->
+                        <div v-if="dense" style="color: gray; width: 100%; text-align: left;">{{item.time}}</div>
                         <v-col style="background: white; border-radius: 8px;">
                             <div class="timeline-title">{{item.topic}}</div>
                             <div class="timeline-addr mb-3">{{item.addr}}</div>
@@ -157,5 +158,25 @@ export default class Experience extends Vue {
             icon: 'fa fa-user-graduate',
         },
     ];
+
+    public dense: boolean = false;
+
+    public mounted() {
+        window.addEventListener('resize', this.resize);
+        this.resize();
+    }
+
+    public resize() {
+        const dom: any = this.$refs.timelineDom;
+        if (!dom) {
+            return;
+        }
+        const width = dom.$el.clientWidth;
+        if (width < 750) {
+            this.dense = true;
+        } else {
+            this.dense = false;
+        }
+    }
 }
 </script>
