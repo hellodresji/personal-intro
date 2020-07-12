@@ -22,7 +22,7 @@ const routes: RouteConfig[] = [
   {
     path: '/cv',
     component: Resume,
-  }
+  },
 ];
 
 const router = new VueRouter({
