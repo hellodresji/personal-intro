@@ -163,7 +163,7 @@
     }
     .info-container, .about-me .desc,
     .skills {
-        width: 400px;
+        width: 100%;
     }
 }
 .content-section {
