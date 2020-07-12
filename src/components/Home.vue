@@ -10,9 +10,15 @@
                 GUANGHUI JI
             </p>
             <p class="desc">A frontend developer, who can bring all your innovation ideas into reality!</p>
-            <v-icon dark class="external">fab fa-xing</v-icon>
-            <v-icon dark class="external">fab fa-linkedin-in</v-icon>
-            <v-icon dark class="external">fab fa-google</v-icon>
+            <v-btn icon @click="navigateTo('xing')" dark :ripple="false">
+                <v-icon dark>fab fa-xing</v-icon>
+            </v-btn>
+            <v-btn icon @click="navigateTo('linked-in')" dark :ripple="false">
+                <v-icon dark>fab fa-linkedin-in</v-icon>
+            </v-btn>
+            <v-btn icon @click="mailTo" dark :ripple="false">
+                <v-icon dark>fab fa-google</v-icon>
+            </v-btn>
         </div>
         <div class="hint">
             <ScrollHint :theme="'dark'"></ScrollHint>
@@ -126,5 +132,21 @@ import { Component } from 'vue-property-decorator';
     }
 })
 export default class Home extends Vue {
+    public navigateTo(target: string) {
+        switch (target) {
+            case 'xing':
+                window.open('https://www.xing.com/profile/Guanghui_Ji2/cv');
+                break;
+            case 'linked-in':
+                window.open('https://www.linkedin.com/in/guanghui-ji-b73881ab');
+                break;
+            default:
+                break;
+        }
+    }
+
+    public mailTo() {
+        window.location.href = `mailto:aaron.guanghui.ji@gmail.com`;
+    }
 }
 </script>
