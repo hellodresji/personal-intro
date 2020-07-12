@@ -48,6 +48,52 @@
                     </div>
                 </section>
             </section>
+            <section>
+                <p class="sub-title" style="text-align: center;">Skills</p>
+                <section class="skills">
+                    <div class="info-item">
+                        <div class="info-title">Frontend related:</div>
+                        <div class="info-content">
+                            <v-chip
+                                v-for="item of frontend"
+                                :key="item"
+                                class="mr-2 mb-2"
+                                small
+                                >
+                                {{item}}
+                            </v-chip>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-title">Backend related:</div>
+                        <div class="info-content">
+                            <v-chip
+                                v-for="item of backend"
+                                :key="item"
+                                class="mr-2 mb-2"
+                                small
+                                >
+                                {{item}}
+                            </v-chip>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-title">Other:</div>
+                        <div class="info-content">
+                            <v-chip
+                                v-for="item of other"
+                                :key="item"
+                                class="mr-2 mb-2"
+                                small
+                                >
+                                {{item}}
+                            </v-chip>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </v-container>
     </div>
 </template>
@@ -108,12 +154,12 @@
 }
 
 .avatar .img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    background-image: url('../assets/imgs/home.jpeg');
+    background-image: url('../assets/imgs/pic.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center 0;
 }
 
 .info-item {
@@ -133,6 +179,10 @@
     font-weight: 300;
     /* font-size: .9em; */
 }
+
+.skills .info-title {
+    min-width: 150px;
+}
 </style>
 <script lang="ts">
 import Vue from 'vue';
@@ -140,6 +190,38 @@ import { Component } from 'vue-property-decorator';
 
 @Component
 export default class Profile extends Vue {
-    
+    public frontend: string[] = [
+        'JavaScript',
+        'Vue.js',
+        'Angular',
+        'webpack',
+        'd3.js',
+        'chart.js',
+        'CSS/SASS',
+        'HTML5',
+    ];
+
+    public backend: string[] = [
+        'node.js',
+        'java',
+        'maven',
+    ];
+
+    public database: string[] = [
+        'MySQL',
+        'Postgre',
+        'MongoDB'
+    ];
+
+    public other: string[] = [
+        'Hadoop',
+        'Spark',
+        'python',
+        'Data Mining',
+        'C/C++',
+        'REST',
+        'Websocket',
+        'Git',
+    ];
 }
 </script>
