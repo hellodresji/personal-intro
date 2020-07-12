@@ -23,11 +23,11 @@
                     <p class="sub-title mt-4">Details</p>
                     <div class="info-container">
                         <div class="info-item">
-                            <div class="info-title">Lastname:</div>
+                            <div class="info-title">Firstname:</div>
                             <div class="info-content">Guanghui</div>
                         </div>
                         <div class="info-item">
-                            <div class="info-title">Firstname:</div>
+                            <div class="info-title">Lastname:</div>
                             <div class="info-content">Ji</div>
                         </div>
                         <div class="info-item">
@@ -71,6 +71,20 @@
                         <div class="info-content">
                             <v-chip
                                 v-for="item of backend"
+                                :key="item"
+                                class="mr-2 mb-2"
+                                small
+                                >
+                                {{item}}
+                            </v-chip>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-title">Database related:</div>
+                        <div class="info-content">
+                            <v-chip
+                                v-for="item of database"
                                 :key="item"
                                 class="mr-2 mb-2"
                                 small

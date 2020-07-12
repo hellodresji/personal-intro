@@ -114,7 +114,7 @@ export default class Experience extends Vue {
             topic: 'Fullstack developer - Working student',
             content: 'Development assistant for data process. Developed Java and pure JS based web map application.',
             techs: ['Java', 'Kafka', 'Websocket', 'Leaflet', 'CSS3', 'HTML5'],
-            addr: 'Fraunhofer-Institut für Verkehrsß und Infrastrukturszsteme IVI',
+            addr: 'Fraunhofer-Institut für Verkehrs- und Infrastrukturszsteme IVI',
             icon: 'fa fa-code',
         },
         {
@@ -138,7 +138,7 @@ export default class Experience extends Vue {
             topic: 'Fullstack developer - Working student',
             content: 'Development assistant for data visualization. Developed Java and Jquery based web realtime application.',
             techs: ['Java', 'Postgre', 'HTML5', 'JQuery', 'WebSocket', 'Kafka', 'D3.js', 'CSS3'],
-            addr: 'Fraunhofer-Institut für Verkehrsß und Infrastrukturszsteme IVI',
+            addr: 'Fraunhofer-Institut für Verkehrs- und Infrastrukturszsteme IVI',
             icon: 'fa fa-code',
         },
         {
