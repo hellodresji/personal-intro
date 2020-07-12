@@ -14,6 +14,9 @@
             <v-icon dark class="external">fab fa-linkedin-in</v-icon>
             <v-icon dark class="external">fab fa-google</v-icon>
         </div>
+        <div class="hint">
+            <ScrollHint :theme="'dark'"></ScrollHint>
+        </div>
     </div>
 </template>
 <style scoped>
@@ -28,6 +31,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hint {
+    position: absolute;
+    bottom: 5px;
 }
 
 .bkg {
@@ -108,9 +116,15 @@
 </style>
 <script lang="ts">
 import Vue from 'vue';
+import ScrollHint from './ScrollHint.vue';
+
 import { Component } from 'vue-property-decorator';
 
-@Component
+@Component({
+    components: {
+        ScrollHint,
+    }
+})
 export default class Home extends Vue {
 }
 </script>

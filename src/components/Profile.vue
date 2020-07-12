@@ -12,7 +12,8 @@
                 <section class="about-me">
                     <p class="sub-title mt-4">About Me</p>
                     <div class="desc">
-                        I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.
+                        I am a frontend developer and also have backend knowledge. I enjoy the smiling face when I bring the product in front of users, which not only satisfies their expectations but also possesses what the users did not imagine.
+                        I enjoy solving problems, offering solutions and exchanging awesome ideas, certainly, seeking for latest technologies.
                     </div>
                 </section>
                 <section class="avatar">
@@ -94,13 +95,17 @@
                     </div>
                 </section>
             </section>
+            <!-- <div class="hint">
+                <ScrollHint></ScrollHint>
+            </div> -->
         </v-container>
     </div>
 </template>
 <style scoped>
 .wrapper {
-    height: 100%;
-    widows: 100%;
+    /* height: 100%; */
+    width: 100%;
+    position: relative;
 }
 
 .profile-container {
@@ -183,28 +188,40 @@
 .skills .info-title {
     min-width: 150px;
 }
+
+.hint {
+    bottom: 5px;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
 </style>
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
+import ScrollHint from './ScrollHint.vue';
 
-@Component
+@Component({
+    components: {
+        ScrollHint,
+    }
+})
 export default class Profile extends Vue {
     public frontend: string[] = [
         'JavaScript',
         'Vue.js',
         'Angular',
-        'webpack',
-        'd3.js',
-        'chart.js',
+        'Webpack',
+        'D3.js',
+        'Chart.js',
         'CSS/SASS',
         'HTML5',
     ];
 
     public backend: string[] = [
-        'node.js',
-        'java',
-        'maven',
+        'Node.js',
+        'Java',
+        'Maven',
     ];
 
     public database: string[] = [
@@ -216,7 +233,7 @@ export default class Profile extends Vue {
     public other: string[] = [
         'Hadoop',
         'Spark',
-        'python',
+        'Python',
         'Data Mining',
         'C/C++',
         'REST',
