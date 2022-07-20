@@ -1,0 +1,63 @@
+{
+  "user": {
+    "name": "Vorname",
+    "familyname": "Nachname",
+    "birthday": "Geburtsdatum",
+    "email": "Email",
+    "telephone": "Tel.",
+    "address": "Adresse"
+  },
+  "resume": {
+    "title": "Lebenslauf",
+    "education": "Studium",
+    "technical": "Technische Erfahrungen",
+    "skills": "Fähigkeiten",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Datenbank",
+    "others": "Andere",
+    "language": "Sprachen"
+  },
+  "languageLevel": {
+    "fluent": "Fließend",
+    "good": "Gut",
+    "motherLanguage": "Muttersprache",
+    "advanced": "Advanced"
+  },
+  "langauge": {
+    "ch": "Chinesisch",
+    "de": "Deutsch",
+    "en": "Englisch",
+    "jp": "Japanisch"
+  },
+  "education": {
+    "bachelor": "Bachelorstudium Informatik",
+    "master": "Masterstudium Informatik",
+    "exchange": "Austauschstudent Informatik"
+  },
+  "time": {
+    "untilNow": "Bis jetzt"
+  },
+  "job": {
+    "dualis": "Vollzeit Frontend developer. Entwicklung der Web App für GANTTPLAN APS",
+    "elco": "Vollzeit Fullstack developer - Schwerpunkt Frontend. Entwicklung der Web und Mobile Apps für industrielles IoT",
+    "fhMap": "Development Assistant für Datenverhandlung. Entwicklung der Java und JS basierten Web-Karte Applikation.",
+    "master": "Analysis and Evaluation of Visual Data Exploration Algorithms for Big Data.",
+    "fhGlobal": "Development Assistant für Datenvisualisierung. Entwicklung der Java and JQuery basierten Web-Rechtzeit Applikation.",
+    "bau": "Development Assistant für merhere Aspekte. Entwicklung der Java, Node.js und Javascript basierten Software und Web Apps."
+  },
+  "career_title": {
+    "frontend": "Frontend developer",
+    "backend": "Backend developer",
+    "fullstack": "Fullstack developer",
+    "master": "Masterarbeit"
+  },
+  "university": {
+    "WUST": "Wuhan university of science and technology",
+    "TUD": "Technische Universität Dresden",
+    "KIT": "Kitami institute of technology"
+  },
+  "jobType": {
+    "workingStudent": "Werkstudent"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "user": {
+    "name": "名字",
+    "familyname": "姓",
+    "birthday": "生日",
+    "email": "邮箱",
+    "telephone": "电话",
+    "address": "地址",
+    "ch_name": "季光辉"
+  },
+  "resume": {
+    "title": "个人简历",
+    "education": "教育背景",
+    "technical": "工作经历",
+    "skills": "专业技能",
+    "frontend": "前端",
+    "backend": "后端",
+    "database": "数据库",
+    "others": "其他",
+    "language": "语言"
+  },
+  "languageLevel": {
+    "fluent": "流利",
+    "good": "基础知识",
+    "motherLanguage": "母语",
+    "advanced": "精通"
+  },
+  "langauge": {
+    "ch": "中文",
+    "de": "德语",
+    "en": "英语",
+    "jp": "日语"
+  },
+  "education": {
+    "bachelor": "本科 - 计算机科学与技术",
+    "master": "研究生 - 计算机科学与技术",
+    "exchange": "交换生 - 计算机科学与技术"
+  },
+  "time": {
+    "untilNow": "至今"
+  },
+  "job": {
+    "dualis": "前端开发工程师（全职）- 负责开发基于Web的高级计划与排程（APS）应用",
+    "elco": "软件开发工程师（全职）- 负责开发基于Web的工业IoT软件",
+    "fhMap": "开发助理（兼职）- 负责开发基于Java和JS的地图应用",
+    "master": "分析评估大数据探索及可视化相关算法",
+    "fhGlobal": "开发助理（兼职）- 负责开发基于Java和JS的Web实时数据可视化应用",
+    "bau": "开发助理（兼职）- 负责开发基于Java，Nodejs及JS的Web应用和软件"
+  },
+  "career_title": {
+    "frontend": "前端工程师",
+    "backend": "后端工程师",
+    "fullstack": "全栈工程师",
+    "master": "研究生毕业设计"
+  },
+  "university": {
+    "WUST": "武汉科技大学",
+    "TUD": "德累斯顿工业大学",
+    "KIT": "北见工业大学"
+  },
+  "jobType": {
+    "workingStudent": "学生工"
+  }
+}

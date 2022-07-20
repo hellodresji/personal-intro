@@ -250,12 +250,15 @@ export default class Profile extends Vue {
         'Chart.js',
         'CSS/SASS',
         'HTML5',
+        'Vue3',
+        'Vite'
     ];
 
     public backend: string[] = [
         'Node.js',
         'Java',
         'Maven',
+        'Golang'
     ];
 
     public database: string[] = [

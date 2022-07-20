@@ -1,0 +1,51 @@
+{
+  "user": {
+    "name": "Last name",
+    "familyname": "First name",
+    "birthday": "Birthday",
+    "email": "Email",
+    "telephone": "Tel.",
+    "address": "Address"
+  },
+  "resume": {
+    "title": "Resume",
+    "education": "Education",
+    "technical": "Technical Experience",
+    "skills": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "others": "Others",
+    "language": "Language"
+  },
+  "languageLevel": {
+    "fluent": "Fluent",
+    "good": "Good",
+    "motherLanguage": "Mother language",
+    "advanced": "Advanced"
+  },
+  "langauge": {
+    "ch": "Chinese",
+    "de": "German",
+    "en": "English",
+    "jp": "Japanese"
+  },
+  "education": {
+    "bachelor": "Bachelor of Computer Science",
+    "master": "Master of Computer Science"
+  },
+  "time": {
+    "untilNow": "Until now"
+  },
+  "job": {
+    "dualis": "Fulltime frontend developer. Web app of GANTTPLAN APS.",
+    "elco": "Fulltime frontend developer. Web and mobile apps for industrial IoT.",
+    "fhMap": "Development assistant for automobile data processing. Java and js based realtime web map application.",
+    "master": "Analysis and Evaluation of Visual Data Exploration Algorithms for Big Data.",
+    "fhGlobal": "Development assistant for traffic data visualization. Java and jquery based realtime web application.",
+    "bau": "Development assistant. Java, node.js and js based software and web app."
+  },
+  "jobType": {
+    "workingStudent": "Working student"
+  }
+}
