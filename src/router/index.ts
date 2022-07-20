@@ -27,7 +27,8 @@ const routes: RouteConfig[] = [
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  // not able to deploy to github pages when build with history mode
+  // mode: "history",
   base: process.env.BASE_URL,
   routes,
 });
